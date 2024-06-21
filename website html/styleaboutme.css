@@ -1,0 +1,23 @@
+.about-section {
+    padding: 80px 0;
+    background-color: #280338; /* Dark blue */
+    color: #ffffff;
+  }
+  
+  .about-section h2 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-section p {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-section img {
+    border: 5px solid #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-section img:hover {
+    transform: scale(1.1);
+  }
+  

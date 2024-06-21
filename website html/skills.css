@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Dark blue */
+  }
+  
+  .skills-section {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    width: calc(33.33% - 20px);
+    margin: 20px 0;
+  }
+  
+  .skill-box {
+    background-color: #8e44ad; /* Dark violet */
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .frontend {
+    border-bottom: 5px solid #3498db; /* Light blue */
+  }
+  
+  .backend {
+    border-bottom: 5px solid #9b59b6; /* Light violet */
+  }
+  
+  .datascience {
+    border-bottom: 5px solid #16a085; /* Dark cyan */
+  }
+  
+  .quantitativefinance {
+    border-bottom: 5px solid #f39c12; /* Orange */
+  }
+  
+  .c_cpp {
+    border-bottom: 5px solid #d35400; /* Dark orange */
+  }
+  
+  .sql {
+    border-bottom: 5px solid #27ae60; /* Dark green */
+  }
+  
+  .skill-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .skill-box h3 {
+    margin: 0;
+  }
+  

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta http-equiv="refresh" content="30">
+
+
+
+    <!--
+        "to refresh the screen every 30 seconds"
+        -->
+    <meta name="viewpoint" content="width=device-width , initial-scale=1.0">
+    <!--
+            This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+        -->
+    <title>Jugraunaq Singh-Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="sc1.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="1st.css">
+    <link rel="stylesheet" href="contactsection.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 31);
+            color: white;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            position: sticky;
+            top:0;
+            cursor: pointer;
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            display: flex;
+
+            /*Let all the flexible items be the same length, regardless of its content*/
+
+            
+
+            align-items: center;
+            height: 100px;
+            
+            background-color: rgb(1, 1, 53) ;
+            
+            
+            justify-content: space-around;
+
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            align-items: center;
+
+        }
+
+        nav ul li {
+
+            list-style: none;
+            margin: 0 23px;
+
+            display: flex;
+
+        }
+
+        nav ul li a {
+            text-decoration: solid;
+            color: white;
+
+
+
+        }
+
+        nav ul li a:hover {
+            text-decoration: solid;
+            color: rgb(85, 6, 158);
+            font-size: 1.03rem;
+
+
+
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+            /*1rem=16px*/
+
+        }
+
+        .section1 {
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            background-blend-mode: lighten;
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            /*for top and bottom 0 for left and right margin gap*/
+
+            align-items: center;
+
+        }
+
+        .section1>div {
+            /*by using > only first div of section gets 30% width*/
+            width: 40%;
+
+        }
+
+        .sec1leftdiv div {
+            width: 60%;
+
+
+        }
+
+        .sec1leftdiv {
+
+            font-size: 3rem;
+
+        }
+
+        .sec1leftdiv .buttons {
+            padding: 50px 0;
+        }
+
+        .sec1leftdiv .btn1 {
+            padding: 12px;
+            background-color: rgb(12, 3, 20);
+            color: white;
+            border-radius: 6px;
+
+            border: 2px solid white;
+
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .sec1leftdiv .btn2 {
+            padding: 12px;
+            background-color: rgb(12, 3, 20);
+            color: white;
+            border-radius: 6px;
+
+            border: 2px solid white;
+
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+
+        .sec1rightdiv {
+            width: 50%;
+            margin: right -50px;
+            ;
+
+        }
+
+        .sec1rightdiv img {
+            width: 80%;
+            margin: 58px 0;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+
+
+
+
+        }
+
+        .color {
+            color: aqua;
+
+
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(168, 101, 231);
+            height: 0.5px;
+            margin: 40px 84px;
+
+        }
+
+        .section2 {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .section2 h1 {
+
+            font-size: 1.9rem;
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        .section2 .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .section2 .box .vertical {
+            height: 98px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+
+        }
+
+        .vertical-title {
+            font-size: 20px;
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: grey;
+
+
+        }
+
+        .img1 {
+            width: 25px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .myskill {
+            display: flex;
+            align-items: center;
+            margin: 14px 0px;
+            font-size: 4rem;
+        }
+
+
+
+        @media screen and (max-width:1276px) {
+
+            .box {
+                flex-direction: column;
+            }
+
+            .section2 {
+                height: 70vh;
+
+            }
+
+            .section2 .box .vertical {
+                height: fit-content;
+
+
+            }
+
+            .box .vertical .img1 {
+                top: 4px;
+
+            }
+
+            .box .vertical-title {
+                margin-left: 40px;
+                top: auto;
+            }
+
+            .box .vertical-desc {
+                top: auto;
+                margin-left: 40px;
+            }
+
+
+            .section1 {
+
+                flex-direction: column-reverse;
+            }
+
+        }
+
+
+        /*
+        @media screen and (min-width:701px)and(max-width: 1276px) {
+
+            .box {
+                flex-direction: column;
+            }
+
+            .section2 {
+                height: 220vh;
+
+            }
+
+            .section2 .box .vertical {
+                height: fit-content;
+
+
+            }
+
+            .box .vertical .img1 {
+                top: 4px;
+
+            }
+
+            .box .vertical-title {
+                margin-left: 40px;
+                top: auto;
+            }
+
+            .box .vertical-desc {
+                top: auto;
+                margin-left: 40px;
+            }
+
+
+            .section1 {
+
+                flex-direction: column-reverse;
+            }
+        }
+        */
+    </style>
+
+</head>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jugraunaq's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="1st.html"> Home</a></li>
+                    <li><a href="aboutme.html"> About</a></li>
+                    <li><a href="myresume.html"> My Resume</a></li>
+                    <li><a href="frontend.html"> My Certifications</a></li>
+                    <li><a href="/"> Contact Me</a></li>
+                </ul>
+            </div>
+
+
+            <!--
+                    The <nav> tag defines a set of navigation links.
+                 <nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav>   -->
+
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="sec1leftdiv">
+                Hey, <span class="color">Jugraunaq</span> This
+                Side<!--The <span> tag is an inline container used to mark up 
+                    a part of a text, or a part of a document.
+
+                    The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.-->
+
+                <div>And I'm a Web Developer and Student</div>
+                <div>At VIT Vellore</div>
+
+                <span id="element"></span>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Welcome', ':)'],
+                        typeSpeed: 50,
+                    });
+                </script>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/jugraunaq-singh-041b75230/">
+                        <button class="btn1">
+                            Visit Linkdin
+
+                        </button></a>
+
+                    <button class="btn2">Visit Github</button>
+                </div>
+                <!--Typed.js is a library that types. Enter in any string, and watch it type at the speed you've set,
+                     backspace what it's typed, and begin a new sentence for however many strings you've set.-->
+
+            </div>
+            <div class="sec1rightdiv animate__animated animate__fadeInRight">
+                <img src="my photo.jpg" alt="My Photo" style="transition: transform 0.3s ease-in-out;">
+            </div>
+        </section>
+        <hr>
+
+        <section class="section2">
+            <h1>
+                My Education
+            </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img1" src="Cambridge-School-Indirapuram.png" alt="">
+                    <div class="vertical-title">
+                        Cambridge School(2012-14)
+                    </div>
+                    <div class="vertical-desc">
+                        Secondary Education
+                        HeadBoy 2014
+                        2nd NSO 2013
+                        3rd IMO 2013
+                    </div>
+                </div>
+                <div class="vertical"><img class="img1" src="channels4_profile.jpg" alt="">
+                    <div class="vertical-title">
+                        Delhi Public School Indirapuram(2014-20)
+                    </div>
+                    <div class="vertical-desc">
+                        Secondary Education
+                        Boards-93%(10th Class)
+                    </div>
+                </div>
+
+                <div class="vertical"><img class="img1" src="512x512bb.jpg" alt="">
+                    <div class="vertical-title">
+                        Delhi Public School RK Puram(2020-22)
+                    </div>
+                    <div class="vertical-desc">
+                        Senior Secondary Education
+                        Boards(PCM)-94%
+                    </div>
+                </div>
+                <div class="vertical"><img class="img1" src="124f55209dacad4cffd468e2997e1dec.jpg" alt="">
+                    <div class="vertical-title">
+                        VIT Vellore(2022-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Btech In ComputerScience
+                        Specialization in Business Systems
+                        CGPA-9.00
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <hr>
+        
+            <!--
+            <section class="skills-section">
+                <h2><span class="myskill">My Skills</span></h2>
+                <div class="skill">
+                    <a href="frontend.html">
+                        <div class="skill-box frontend">
+                            <img src="frontend.jpg" alt="Frontend Development">
+                            <h3>Frontend Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="backend.html">
+                        <div class="skill-box backend">
+                            <img src="backend.jpg" alt="Backend Development">
+                            <h3>Backend Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="datascience.html">
+                        <div class="skill-box datascience">
+                            <img src="datascience.jpg" alt="Data Science">
+                            <h3>Data Science</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="quantitativefinance.html">
+                        <div class="skill-box quantitativefinance">
+                            <img src="quantitativefinance.jpg" alt="Quantitative Finance">
+                            <h3>Quantitative Finance</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="c_cpp.html">
+                        <div class="skill-box c_cpp">
+                            <img src="c++.jpg" alt="C/C++">
+                            <h3>C/C++</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="sql.html">
+                        <div class="skill-box sql">
+                            <img src="mysql.jpg" alt="SQL">
+                            <h3>SQL</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        -->
+            <section id="skills" class="skills-section">
+                <h2><span class="myskill">My Skills</span></h2>
+                <div class="skill">
+                    <a href="frontend.html">
+                        <div class="skill-box frontend">
+                            <img src="frontend.jpg" alt="Frontend Development">
+                            <h3>Frontend Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="backend.html">
+                        <div class="skill-box backend">
+                            <img src="backend.jpg" alt="Backend Development">
+                            <h3>Backend Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="datascience.html">
+                        <div class="skill-box datascience">
+                            <img src="datascience.jpg" alt="Data Science">
+                            <h3>Data Science</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="quantitativefinance.html">
+                        <div class="skill-box quantitativefinance">
+                            <img src="quantitativefinance.jpg" alt="Quantitative Finance">
+                            <h3>Quantitative Finance</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="c_cpp.html">
+                        <div class="skill-box c_cpp">
+                            <img src="c++.jpg" alt="C/C++">
+                            <h3>C/C++</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="skill">
+                    <a href="sql.html">
+                        <div class="skill-box sql">
+                            <img src="mysql.jpg" alt="SQL">
+                            <h3>SQL</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+
+            <!--
+        <section class="skills-section">
+            <h2><span class="skillstextedit">My Skills</span></h2>
+            <div class="skill">
+              <a href="frontend.html">
+                <div class="skill-box frontend">
+                  <h3>Frontend Development</h3>
+                </div>
+              </a>
+            </div>
+            <div class="skill">
+              <a href="backend.html">
+                <div class="skill-box backend">
+                  <h3>Backend Development</h3>
+                </div>
+              </a>
+            </div>
+            
+          </section>
+
+    
+
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="skill">
+              <h3>HTML</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <h3>CSS</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <h3>JavaScript</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            
+        
+          </section>
+        
+        
+          <section class="certifications-section">
+            <h2>Certifications</h2>
+            <ul class="certifications-list">
+              <li><a href="#">Certification Name 1</a></li>
+              <li><a href="#">Certification Name 2</a></li>
+              
+            </ul>
+          </section>
+        
+          <section class="description-section">
+            <h2>Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dui vel mauris suscipit, nec fermentum orci fermentum. Sed vulputate dolor at libero tempus, eget laoreet neque tincidunt.</p>
+          </section>
+        -->
+            <hr>
+
+            <section class="section contact-section">
+                <h2 class="section-heading" style="
+                    text-align: center;
+                     margin-bottom: 50px;
+                     font-size: 2.5rem;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                       ">Contact Me</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group1">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group3">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+
+
+
+
+
+
+    </main>
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+            <p class="footerdescme">Jugraunaq Singh's
+                Portfolio
+
+            </p>
+
+            <p class="footer-links">
+
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>All Rights Reserved &copy; 2024</p>
+        </div>
+
+
+
+    </footer>
+    <script src="2.js"></script>
+</body>
+
+</html>
